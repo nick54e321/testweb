@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forgiveness</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        #message {
+            margin-top: 50px;
+            font-size: 20px;
+        }
+
+        #options {
+            margin-top: 20px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #yes {
+            background-color: #4CAF50; /* Green */
+        }
+
+        #no {
+            background-color: #f44336; /* Red */
+        }
+    </style>
+</head>
+<body>
+
+<div id="message">Will you forgive me?</div>
+
+<div id="options">
+    <button id="yes" class="button"><a href="https://wa.me/919830416502?text=I%20Love%20You%20Tweetu" style="color: #fff; text-decoration: none;">Yes</a></button>
+    <button id="no" class="button">No</button>
+</div>
+
+<script>
+    document.getElementById('no').addEventListener('mouseenter', function() {
+        alert("I'm sorry, the 'No' option is not available.");
+    });
+</script>
+
+</body>
+</html>
